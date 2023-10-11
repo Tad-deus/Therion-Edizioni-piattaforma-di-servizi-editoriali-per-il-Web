@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+      <title>Therion Edizioni</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="keywords" content="Therion, edizioni, editore, libreria, online, libri, homepage">
+      <meta name="author" content="Giovanni Maria Occhipinti">
+      <meta name="description" content="risorsa web di Therion Edizioni S.p.A.">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://kit.fontawesome.com/4f36f88e43.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <div class="header">
+        <div class="meta">
+          <p><a href="#chisiamo" title="la nostra storia">Chi siamo</a> | <a href="#feedback" title="feedback">Feedback</a> | <a href="#newsletter" title="newsletter">Newsletter</p>
+        </div>
+        <div class="icons">
+          <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <input type="text" placeholder="Cerca...">
+          <a href="#carrello" title="carrello"><button class="btn"><i class="fa-solid fa-cart-shopping"></i></button></a>
+          <a href="#whishlist" title="whishlist"><button class="btn"><i class="fa-solid fa-heart"></i></button></a>
+          <a href="#profilo-utente" title="profilo personale"><button class="btn"><i class="fa-solid fa-circle-user"></i></button></a>
+          <a href="#domande-frequenti" title="domande frequenti"><button class="btn"><i class="fa-solid fa-circle-question"></i></i></button></a>
+        </div>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="logo Therion Edizioni S.p.A." title="torna all'home page">
+          </a>
+        </div>
+        <div class="sign">
+          <p><a href="#accedi" title="accedi">accedi</a> | <a href="#registrati" title="registrati">registrati</a></p>
+        </div>
+      </div>
+      <div class="topnav-row">
+        <div class="column side"></div>
+        <div class="column middle">
+         <a href="index.html" title="homepage">HOME</a>
+         <a href="catalogo.html" title="catalogo">CATALOGO</a>
+         <a href="#autori" title="autori">AUTORI</a>
+         <a href="#extra" title="contenuti extra">EXTRA</a>
+         <a href="#eventi" title="eventi">EVENTI</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column side"></div>
+        <div class="column middle">
+          <h1>ULTIME USCITE</h1>
+          <div class="ultime-uscite">
+            <div class="slideshow">
+              <div class="slides">
+                <a href="item.html" title="pagina item 1"><img src="img/copertina1.png"></a>
+              </div>
+              <div class="slides">
+                <a href="#item2" title="pagina item 2"><img src="img/copertina2.png"></a>
+              </div>
+              <div class="slides">
+                <a href="#item3" title="pagina item 3"><img src="img/copertina3.png"></a>
+              </div>
+              <div class="slides">
+                <a href="#item4" title="pagina item 4"><img src="img/copertina4.png"></a>
+              </div>
+              <div class="prevnext">
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+              </div>
+              <script>
+                        let slideIndex = 1;
+                        showSlides(slideIndex);
+                        function plusSlides(n) {
+                          showSlides(slideIndex += n);
+                        }
+                        function currentSlide(n) {
+                          showSlides(slideIndex = n);
+                        }
+                        function showSlides(n) {
+                          let i;
+                          let slides = document.getElementsByClassName("slides");
+                          let dots = document.getElementsByClassName("dot");
+                          if (n > slides.length) {slideIndex = 1}    
+                          if (n < 1) {slideIndex = slides.length}
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block";  
+                          dots[slideIndex-1].className += " active";
+                        }
+              </script>   
+            </div>
+          </div>
+          <div class="catalogo">
+            <h1><a href="catalogo.html" title="catalogo" id="catalogue">DAL CATALOGO</a></h1>
+            <a href="item.html" title="pagina item 1">
+              <div class="card-copertina">
+                <img src="img/libro1.png" alt="copertina libro 1" widht="215"  height="315">
+                <div class="descrizione">
+                    <p>"L'opera ammonisce circa un fatto dell'esser uomo con cui è necessario fare i conti: niente è vero, tutto è lecito."</p>
+                </div>
+              </div>
+            </a>
+            <a href="#item2" title="pagina item 2">
+              <div class="card-copertina">
+                <img src="img/libro2.png" alt="copertina libro 2" widht="215"  height="315">
+                <div class="descrizione">
+                  <p>"Un'analisi dei cicli e ricorsi storici all'intersezione tra saggio, romanzo e diario autobiografico. Pregiata."</p> 
+                </div>
+              </div>
+            </a>
+            <a href="#item3" title="pagina item 3">
+              <div class="card-copertina">
+                <img src="img/libro3.png" alt="copertina libro 3" widht="215"  height="315">
+                <div class="descrizione">
+                  <p>"Miscela perfetta di cinismo e idealismo: un modo originale di raccontare i fenomeni del mondo."</p> 
+                </div>
+              </div>
+            </a>
+            <a href="#item4" title="pagina item 4">
+              <div class="card-copertina">
+                <img src="img/libro4.png" alt="copertina libro 4" widht="215"  height="315"> 
+                <div class="descrizione">
+                  <p>"Una raccolta di poesie che mostra con nitidezza la tragicità silenziosa che si nasconde dietro ogni bivio."</p> 
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="sezione-autori">
+            <a href="#autori" title="autori"><h1>AUTORI IN VOGA</h1></a>
+            <div class="tab">
+              <button class="tablinks" onclick="openAuthor(event, 'Giovanni')" id="defaultOpen">Giovanni Occhipinti</button> 
+              <button class="tablinks" onclick="openAuthor(event, 'Gianfranco')">Gianfranco Saluti</button>
+              <button class="tablinks" onclick="openAuthor(event, 'Martina')">Martina Casanova</button>
+              <button class="tablinks" onclick="openAuthor(event, 'Maria')" id="margin-extra-tab">Maria Gladio</button>
+            </div>
+            <div id="Giovanni" class="tabcontent">
+              <div class="immagineprofilo">
+               <img src="img/profiloautore1.png">
+              </div>
+              <div class="bio">
+               <p>Classe 2000, nato a Urbino e figlio di nessuno. Giovanni Occhipinti inizia la sua carriera a quindici anni, pubblicando piccole raccolte di poesie rilegate in quadernetti di carta riciclata. Tuttavia, nel periodo universitario passa al mondo dell'editoria ufficiale, fondando Therion Edizioni e pubblicando la raccolta <a href="#item5" title="pagina item 5"><em>Fiato Corto</em></a> ed il romanzo <a href="item.html" title="pagina item 1"><em>Chiedere è lecito</em></a>, entrambi grandi successi di critica. Solo il tempo potrà dirci se è una promessa o una meteora; per ora limitiamoci a registrare i fatti, che lo danno come l'autore più amato della piattaforma; al domani ci penserà Dio. Per maggiori informazioni <a href="#profilo-autore1" title="profilo autore" id="link0nondec">visita il profilo dell'autore</a>.</p>
+              </div>
+            </div>
+            <div id="Gianfranco" class="tabcontent">
+              <div class="immagineprofilo">
+               <img src="img/profiloautore2.png">
+              </div>
+              <div class="bio">
+               <p>Gianfranco è un ometto all'apparenza docile e mansueto; nato nel 1989 a Macerata e vissuto per l'intera vita in disparte nel suo studio, custodisce al suo interno una fiamma vorace, evidentissima nella sua prosa così lucida e potente. Antropologo di successo, il mondo accademico non gli bastava più... e a rigor di ragione visto il suo enorme talento letterario! Con Therion Edizioni ha pubblicato due saggi fascinosi: <a href="#item6" title="pagina item 6"><em>Profezie e Archetipi</em></a> e l'ormai best seller <a href="#item2" title="pagina item 2"><em>Tutto è per sempre</em></a>, che lo ha trasformato nel ricercatore più chic e cliccato di Italia. Per maggiori informazioni <a href="#profilo-autore2" title="profilo autore" id="link1nondec">visita il profilo dell'autore</a>.</p> 
+              </div>
+            </div>
+            <div id="Martina" class="tabcontent">
+              <div class="immagineprofilo">
+               <img src="img/profiloautore3.png">
+              </div>
+              <div class="bio">
+               <p>Martina è una scrittrice fenomenale. Ci sono poche altri modi di descriverla. Alla sua prima opera (<a href="#item3" title="pagina item 3"><em>Wild Words</em></a>) promette già di divenire un punto di riferimento stabile nel panorama letterario internazionale ed è anche in procinto di pubblicare un secondo romanzo! Noi lettori è di questa prosa che abbiamo bisogno: con pochi vezzi e dritta al punto, capace però di mantenere intatta eleganza e armonia, come si addice a chi padrona magistralmente l'arte della parola. Che dire di piu: si merita sicuramente un posto nella nostra classifica come autrice donna con più copie vendute! Per maggiori informazioni <a href="#profilo-autore3" title="profilo autore" id="link2nondec">visita il profilo dell'autore</a>.</p>
+              </div>
+            </div>
+            <div id="Maria" class="tabcontent" id="margin-extra-content">
+              <div class="immagineprofilo">
+               <img src="img/profiloautore4.png">
+              </div>
+              <div class="bio">
+               <p>Maria, nata nel 2005, è una ragazza di provincia che fino a pochi mesi fa era invisibile al mondo. Esisteva solo lei ed il suo taccuino. Ora, dopo aver pubblicato <a href="#item4" title="pagina item 4"><em>Ciò che ho perso</em></a>, la sua prima raccolta poetica, fa girare la testa a uomini e donne di tutto il paese, diventando la poetessa più apprezzata dell'intero catalogo. Può sembrare ingenua, ma con una voce raffinatissima racconta di eventi che attraversano ogni epoca e individuo; dinnanzi a lei c'è un futuro ricolmo di successi, e non potrebbe essere altrimenti quando la luce di Apollo ti illumina in così tenera età. Per maggiori informazioni <a href="#profilo-autore4" title="profilo autore" id="link3nondec">visita il profilo dell'autore</a>.</p> 
+              </div>
+            </div>
+            <script>
+              function openAuthor(evt, authorName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(authorName).style.display = "block";
+                evt.currentTarget.className += " active";
+                }
+                document.getElementById("defaultOpen").click();
+            </script>
+          </div>
+          <h1><a href="#extra" title="contenuti extra" id="extras">CONTENUTI EXTRA</a></h1>
+          <div class="extra">
+            <div class="container">
+              <img src="img/extra1.png" alt="podcast" class="image">
+              <div class="overlay">
+                <a href="#podcast" title="podcast"><div class="text">esplora!</div></a>
+              </div>
+            </div>
+            <div class="container">
+              <img src="img/extra2.png" alt="audiolibri" class="image">
+              <div class="overlay">
+                <a href="#audiolibri" title="audiolibri"><div class="text">esplora!</div></a>
+              </div>
+            </div>
+            <div class="container">
+              <img src="img/extra3.png" alt="videocorsi" class="image">
+              <div class="overlay">
+                <a href="#videocorsi" title="videocorsi"><div class="text">esplora!</div></a>
+              </div>
+            </div>
+            <div class="container">
+              <img src="img/extra4.png" alt="riviste" class="image">
+              <div class="overlay">
+                <a href="#riviste" title="riviste"><div class="text">esplora!</div></a>
+              </div>
+            </div>
+            <div class="container">
+              <img src="img/extra5.png" alt="dirette&interviste" class="image">
+              <div class="overlay">
+                <a href="#dirette&interviste" title="dirette & interviste"><div class="text">esplora!</div></a>
+              </div>
+            </div>
+            <div class="container">
+              <img src="img/extra6.png" alt="articoli&recensioni" class="image">
+              <div class="overlay">
+                <a href="#articoli&recensioni" title="articoli & recensioni"><div class="text">esplora!</div></a>
+              </div>
+            </div>
+            <div class="container">
+              <img src="img/extra7.png" alt="graphic novel" class="image">
+              <div class="overlay">
+                <a href="#graphicnovel" title="graphic novel"><div class="text">esplora!</div></a>
+              </div>
+            </div>
+            <div class="container">
+              <img src="img/extra8.png" alt="film" class="image">
+              <div class="overlay">
+                <a href="#film" title="film"><div class="text">esplora!</div></a>
+              </div>
+            </div>
+          </div>
+          <h1><a href="#eventi" title="eventi" id="events">EVENTI</a></h1>
+          <div class="eventi">
+              <div class="border">
+                <button class="accordion">"<strong>Slang Poetry Sotto Le Stelle</strong>" - 1° edizione - Agosto 2023 - scarica il bando e iscriviti!</button>
+                <div class="panel">
+                  <p>E' tempo di tornare a declamare le poesie in piazza, dalla gente per la gente. Partecipa al concorso di slang poetry organizzato da Therion Edizioni e prova a guadagnarti la gloria poetica con i tuoi inediti. Il vincitore otterrà un buono di 500$ da utilizzare sulla nostra piattaforma! Per maggiori informazioni <a href="#pagina-evento1" title="pagina dell'evento 1" id="link4nondec">visita la pagina dedicata</a>.</p>
+                </div>
+                <button class="accordion">"<strong>Media e Neuroscienze</strong>" - ciclo di conferenze in location suggestiva - ingresso gratuito e prenotazione obbligatoria!</button>
+                <div class="panel">
+                  <p>Vi siete mai chiesti che effetti ha sul cervello la costante e prolungata esposizione ai media contemporanei? Noi sì, e confessando la nostra più completa ignoranza abbiamo deciso di contattare cinque dei più importanti esperti in materia. Esci dall'ignoranza anche tu e partecipa all'evento più interessante della stagione estiva del 2023! Per maggiori informazioni <a href="#pagina-evento2" title="pagina dell'evento 2" id="link5nondec">visita la pagina dedicata</a>.</p>
+                </div>
+                <button class="accordion">"<strong>Quattro chiacchere tra amici</strong>" - ciclo di incontri con gli autori di Therion Edizioni - ingresso gratuito e prenotazione obbligatoria!</button>
+                <div class="panel">
+                  <p>Lettori e lettrici, non perdete l'occasione di conoscere i vostri scrittori preferiti! Dal 1/6/2023 al 31/8/2023 i vostri beneamini vi aspetteranno per rispondere a tutte le vostre domande e soddisfare ogni curiosità, persino la più psicopatica. Post scriptum: portate una copia del libro da autografare! Per maggiori informazioni <a href="#pagina-evento3" title="pagina dell'evento 3" id="link6nondec">visita la pagina dedicata</a>.</p>
+                </div>
+                <button class="accordion" id="margin-footer">"<strong><em>Ciò che ho perso</em></strong>": presentazione dell'opera di Maria Gladio edita per Therion Edizioni - ingresso gratuito e prenotazione obbligatoria!</button>
+                <div class="panel">
+                  <p>Partecipa al reading poetico basato sull'opera di Maria Gladio "Ciò che ho perso". Gli spettatori avranno diritto ad uno sconto sulla copia cartacea dell'opera. Affrettati a prenotare un posticino, sono limitati! Per maggiori informazioni <a href="#pagina-evento4" title="pagina dell'evento 4" id="link7nondec">visita la pagina dedicata</a>.</p>
+                </div>
+                <script>
+                 var acc = document.getElementsByClassName("accordion");
+                 var i;
+                 for (i = 0; i < acc.length; i++) {
+                 acc[i].addEventListener("click", function() {
+                 this.classList.toggle("active");
+                 var panel = this.nextElementSibling;
+                 if (panel.style.display === "block") {
+                 panel.style.display = "none";
+                 } else {
+                 panel.style.display = "block";
+                 }
+                 });
+                 }
+                </script>
+              </div>
+          </div>
+        </div>
+        <div class="column side"></div>
+      </div>
+      <div class="footer">
+          <div class="main">
+            <p><a href="#chi-siamo" title="la nostra storia">Chi siamo</a></p>
+            <br><br>
+            <p><a href="#feedback" title="feedback">Feedback</a></p>
+            <br><br>
+            <p><a href="#newsletter" title="newsletter">Newsletter</a></p>
+          </div>
+          <div class="contatti">
+            <a href="#pagina-contatti" title="contatti"><h3>CONTATTI</h3></a><br>
+            <ul>
+              <li>Social networks: <a href="#pagina-facebook" title="pagina facebook"><i class="fa-brands fa-facebook" style="cursor:pointer"></i></a>
+              <a href="#profilo-twitter" title="profilo twitter"><i class="fa-brands fa-twitter" style="cursor:pointer"></i></a>
+              <a href="#profilo-google+" title="profilo google+"><i class="fa-brands fa-google-plus-g" style="cursor:pointer"></i></a>
+              <a href="#canale-twitch" title="canale twitch"><i class="fa-brands fa-twitch" style="cursor:pointer"></i></a>
+              <a href="#pagina-instagram" title="pagina instagram"><i class="fa-brands fa-instagram" style="cursor:pointer"></i></a>
+              <a href="#canale-youtube" title="canale youtube"><i class="fa-brands fa-youtube" style="cursor:pointer"></i></a></li>
+              <li>E-mail: <a href="#inviaemail" title="invia email">posta@therionedizioni.com</a></li>
+              <li>Segreteria generale: 051 898 9890</li>
+              <li>Servizio clienti: +39 333 247 5678</li>
+              <li>Via Emilio Zago 20 - Bologna - 40128</li>
+            </ul>
+          </div>
+          <div class="sezioni-tecniche">
+            <h3 class="tecnico">ALTRO</h3><br>
+            <ul>
+              <li><a href="#cookie" title="cookie">Cookie Policy</a></li>
+              <li><a href="#privacy" title="privacy">Privacy Policy</a></li>
+              <li><a href="#rights" title="rights">Rights</a></li>
+              <li><a href="#termini">Termini & condizioni</a></li> 
+              <li><a href="web-project-plan.html">Accessibilità</a></li>         
+            </ul>
+          </div>
+          <img src="img/logo2.png">
+          <div class="topbtn&copy">
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <script>
+            let mybutton = document.getElementById("myBtn");
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+            <p id="copy"></a><i class="fa-solid fa-copyright"></i>2022, Giovanni Occhipinti | Esame di Informatica umanistica | a.a. 2021-2022</p>
+          </div>
+      </div>
+    </body>
+</html>

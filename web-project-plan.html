@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="it">
+
+    <head>
+      <title>Therion Edizioni</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="keywords" content="Therion, edizioni, editore, libreria, online, libri, web-project-plan">
+      <meta name="author" content="Giovanni Maria Occhipinti">
+      <meta name="description" content="risorsa web di Therion Edizioni S.p.A.">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://kit.fontawesome.com/4f36f88e43.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+      <div class="header">
+        <div class="icons">
+          <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <input type="text" placeholder="Cerca...">
+          <a href="#carrello" title="carrello"><button class="btn"><i class="fa-solid fa-cart-shopping"></i></button></a>
+          <a href="#whishlist" title="whishlist"><button class="btn"><i class="fa-solid fa-heart"></i></button></a>
+          <a href="#profilo-utente" title="profilo personale"><button class="btn"><i class="fa-solid fa-circle-user"></i></button></a>
+          <a href="#domande-frequenti" title="domande frequenti"><button class="btn"><i class="fa-solid fa-circle-question"></i></i></button></a>
+        </div>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="logo Therion Edizioni S.p.A." title="torna all'home page">
+          </a>
+        </div>
+        <div class="sign">
+          <p><a href="#accedi" title="accedi" id="accedi">accedi</a> | <a href="#registrati" title="registrati" id=registrati>registrati</a></p>
+        </div>
+      </div>
+
+      <div class="topnav-row">
+        <div class="column side"></div>
+        <div  class="column middle">
+          <a href="index.html" title="homepage">HOME</a>
+          <a href="catalogo.html" title="catalogo">CATALOGO</a>
+          <a href="#autori" title="autori">AUTORI</a>
+          <a href="#extra" title="contenuti extra">EXTRA</a>
+          <a href="#eventi" title="eventi">EVENTI</a> 
+        </div>
+        <div class="column side"></div>
+      </div>
+
+      <div class="row">
+        <div class="column side"></div>
+        <div class="column middle">
+          <div class="servizi">
+            <ul class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="web-project-plan.html">Accessibilità</a></li>
+            </ul>
+          </div>
+          <h1>WEB PROJECT PLAN</h1>
+          <div class="row-grid">
+            <div class="column-grid" onclick="openTab('b1');">
+              Brief
+            </div>
+            <div class="column-grid" onclick="openTab('b2');">
+              Benchmark
+            </div>
+            <div class="column-grid" onclick="openTab('b3');">
+              Struttura
+            </div>
+            <div class="column-grid" onclick="openTab('b4');">
+              Layout
+            </div>
+            <div class="column-grid" onclick="openTab('b5');">
+              Usabilità
+            </div>
+            <div class="column-grid" onclick="openTab('b6');">
+              Servizi
+            </div>
+            <div class="column-grid" onclick="openTab('b7');">
+              Bibliografia
+            </div>
+          </div>
+          <div id="b1" class="containerTab">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <embed src="pdf/Brief.pdf" width="100%" height="1000px"/>
+          </div>
+          <div id="b2" class="containerTab">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <embed src="pdf/Benchmark.pdf" width="100%" height="1000px"/>
+          </div>
+          <div id="b3" class="containerTab">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <embed src="pdf/Struttura.pdf" width="100%" height="1000px"/>
+          </div>
+          <div id="b4" class="containerTab">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <embed src="pdf/Layout.pdf" width="100%" height="1000px"/>
+          </div>
+            <div id="b5" class="containerTab">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <embed src="pdf/Usabilità.pdf" width="100%" height="1000px"/>
+          </div>
+            <div id="b6" class="containerTab">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <embed src="pdf/Servizi.pdf" width="100%" height="1000px"/>
+          </div>
+            <div id="b7" class="containerTab">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <embed src="pdf/Bibliografia.pdf" width="100%" height="1000px"/>
+          </div>
+          <script>
+          function openTab(tabName) {
+            var i, x;
+            x = document.getElementsByClassName("containerTab");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+          }
+          </script>
+        </div>
+        <div class="column side"></div>
+      </div>
+
+      <div class="footer">
+          <div class="main">
+            <p><a href="#chi-siamo" title="la nostra storia">Chi siamo</a></p>
+            <br><br>
+            <p><a href="#feedback" title="feedback">Feedback</a></p>
+            <br><br>
+            <p><a href="#newsletter" title="newsletter">Newsletter</a></p>
+          </div>
+          <div class="contatti">
+            <a href="#pagina-contatti" title="contatti"><h3>CONTATTI</h3></a><br>
+            <ul>
+              <li>Social networks: <a href="#pagina-facebook" title="pagina facebook"><i class="fa-brands fa-facebook" style="cursor:pointer"></i></a>
+              <a href="#profilo-twitter" title="profilo twitter"><i class="fa-brands fa-twitter" style="cursor:pointer"></i></a>
+              <a href="#profilo-google+" title="profilo google+"><i class="fa-brands fa-google-plus-g" style="cursor:pointer"></i></a>
+              <a href="#canale-twitch" title="canale twitch"><i class="fa-brands fa-twitch" style="cursor:pointer"></i></a>
+              <a href="#pagina-instagram" title="pagina instagram"><i class="fa-brands fa-instagram" style="cursor:pointer"></i></a>
+              <a href="#canale-youtube" title="canale youtube"><i class="fa-brands fa-youtube" style="cursor:pointer"></i></a></li>
+              <li>E-mail: <a href="#inviaemail" title="invia email">posta@therionedizioni.com</a></li>
+              <li>Segreteria generale: 051 898 9890</li>
+              <li>Servizio clienti: +39 333 247 5678</li>
+              <li>Via Emilio Zago 20 - Bologna - 40128</li>
+            </ul>
+          </div>
+          <div class="sezioni-tecniche">
+            <h3 class="tecnico">ALTRO</h3><br>
+            <ul>
+              <li><a href="#cookie" title="cookie">Cookie Policy</a></li>
+              <li><a href="#privacy" title="privacy">Privacy Policy</a></li>
+              <li><a href="#rights" title="rights">Rights</a></li>
+              <li><a href="#termini">Termini & condizioni</a></li> 
+              <li><a href="web-project-plan.html">Accessibilità</a></li>         
+            </ul>
+          </div>
+          <img src="img/logo2.png">
+          <div class="topbtn&copy">
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <script>
+            let mybutton = document.getElementById("myBtn");
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+            <p id="copy"></a><i class="fa-solid fa-copyright"></i>2022, Giovanni Occhipinti | Esame di Informatica umanistica | a.a. 2021-2022</p>
+          </div>
+      </div>
+
+    </body>
+</html>

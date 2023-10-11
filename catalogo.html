@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+      <title>Therion Edizioni</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="keywords" content="Therion, edizioni, editore, libreria, online, libri, catalogo">
+      <meta name="author" content="Giovanni Maria Occhipinti">
+      <meta name="description" content="risorsa web di Therion Edizioni S.p.A.">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://kit.fontawesome.com/4f36f88e43.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <div class="header">
+        <div class="meta">
+          <p><a href="#chisiamo" title="la nostra storia">Chi siamo</a> | <a href="#feedback" title="feedback">Feedback</a> | <a href="#newsletter" title="newsletter">Newsletter</p>
+        </div>
+        <div class="icons">
+          <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <input type="text" placeholder="Cerca...">
+          <a href="#carrello" title="carrello"><button class="btn"><i class="fa-solid fa-cart-shopping"></i></button></a>
+          <a href="#whishlist" title="whishlist"><button class="btn"><i class="fa-solid fa-heart"></i></button></a>
+          <a href="#profilo-utente" title="profilo personale"><button class="btn"><i class="fa-solid fa-circle-user"></i></button></a>
+          <a href="#domande-frequenti" title="domande frequenti"><button class="btn"><i class="fa-solid fa-circle-question"></i></i></button></a>
+        </div>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="logo Therion Edizioni S.p.A." title="torna all'home page">
+          </a>
+        </div>
+        <div class="sign">
+          <p><a href="#accedi" title="accedi">accedi</a> | <a href="#registrati" title="registrati">registrati</a></p>
+        </div>
+      </div>
+      <div class="topnav-row">
+        <div class="column side"></div>
+        <div class="column middle">
+         <a href="index.html" title="homepage">HOME</a>
+         <a href="catalogo.html" title="catalogo">CATALOGO</a>
+         <a href="#autori" title="autori">AUTORI</a>
+         <a href="#extra" title="contenuti extra">EXTRA</a>
+         <a href="#eventi" title="eventi">EVENTI</a>
+        </div>
+        <div class="column side"></div>
+      </div>
+
+      <div class="row">
+        <div class="column side"></div>
+        <div class="column middle">
+          <div class="servizi">
+            <ul class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="catalogo.html">Catalogo</a></li>
+            </ul>
+          </div>
+          <div class="ricerca">
+            <div class="titolo"><h1>CERCA NEL CATALOGO</h1></div> <!-- da considerare la div per i titoli-->
+            <div class="rotella">
+             <form class="example" action="/action_page.php">
+              <input type="text" placeholder="cerca..." name="cerca">
+              <button type="submit" title="cerca" href="#risultato-intersezione-criteri"><i class="fa fa-search" href="#lista item selezionati"></i></button>
+             </form>
+            </div>
+            <div class="filtri">
+              <form name="form1" id="form1" action="/action_page.php">
+               <select name="collane" id="collane">
+                <option value="" selected="selected">Biblioteca Therion</option>
+                <option value="" selected="selected">Piccola Biblioteca Therion</option>
+                <option value="" selected="selected">Contemporaneo Classico</option>
+                <option value="" selected="selected">Edizioni speciali</option>
+                <option value="" selected="selected">Lezioni di scienza</option>
+                <option value="" selected="selected">Un mare di storie</option>
+                <option value="" selected="selected">Fuori collana</option>
+                <option value="" selected="selected">-- Filtra per collana --</option>
+               </select>
+               <select name="tema" id="tema">
+                <option value="" selected="selected">Antropologia</option>
+                <option value="" selected="selected">Esistenzialismo</option>
+                <option value="" selected="selected">Scienza</option>
+                <option value="" selected="selected">Religione</option>
+                <option value="" selected="selected">Storia</option>
+                <option value="" selected="selected">Avventura</option>
+                <option value="" selected="selected">Fantasia</option>
+                <option value="" selected="selected">-- Filtra per tema --</option>
+               </select>
+               <select name="chapter" id="chapter">
+                <option value="" selected="selected">Poesia</option>
+                <option value="" selected="selected">Antologie</option>
+                <option value="" selected="selected">Narrativa - romanzi</option>
+                <option value="" selected="selected">Narrativa - racconti</option>
+                <option value="" selected="selected">Diaristica</option>
+                <option value="" selected="selected">Saggistica</option>
+                <option value="" selected="selected">Testi sacri</option>
+                <option value="" selected="selected">-- Filtra per genere --</option>
+               </select>
+               <select name="anno" id="anno">
+                <option value="" selected="selected">2021</option>
+                <option value="" selected="selected">2022</option>
+                <option value="" selected="selected">2023</option>
+                <option value="" selected="selected">2024</option>
+                <option value="" selected="selected">2025</option>
+                <option value="" selected="selected">2026</option>
+                <option value="" selected="selected">2028</option>
+                <option value="" selected="selected">-- Filtra per anno --</option>
+               </select>
+              </form>
+            </div>
+          </div>
+          <br><br>
+          <div class="copertine">
+            <div class="ordina"></div>
+            <div class="immagine-catalogo" id="img-float1"><img src="img/libro1.1.png"></div>
+            <div class="info" id="info-float1">
+              <h3><a href="#pagina-autore1" title="profilo autore">Giovanni Occhipinti</a></h3>
+              <br>
+              <h2><em><a href="item.html" title="pagina dell'opera">Chiedere è lecito</a></em></h2>
+              <br>
+              <p>"Un piccolo uomo, nato agli albori dell'impero romano, conduce una vita spregevole e immorale fino al giorno della sua morte. Poi, il miracolo: la sua esistenza viene protratta nella forma di minuscoli insetti per migliaia di anni finchè, scontata la pena, non ha la possibilità (da chi?) di tornare bambino nel XXI secolo, ricordandosi di tutte le sue vite passate. Come sfrutterà la sua infinita conoscenza? L'opera ammonisce circa un fatto ineluttabile dell'esser uomo, comune tanto agli assassini quanto alle docili vittime: nulla è vero, tutto è lecito, o almeno così traspare da..."</p>
+              <br>
+              <ul>
+                <li>Contemporaneo classico, Fantasia, Narrativa - romanzi</li>
+                <li>2028, pp. 256, ISBN: 9329846155203</li>
+                <li>cartaceo: 19,99€ <button><i title="aggiungi alla wishlist" class="fa-solid fa-heart"></i></button> <button><i class="fa-solid fa-cart-shopping" title="aggiungi al carrello"></i></button> | ebook: 12,99€ <button><i class="fa-solid fa-heart" title="aggiungi alla wishlist"></i></button> <button><i class="fa-solid fa-cart-shopping" title="aggiungi al carrello"></i></button></li>
+              </ul>
+            </div>
+            <hr>
+            <div class="immagine-catalogo" id="img-float2"><img src="img/libro2.2.png"></div>
+            <div class="info" id="info-float2">
+             <h3><a href="#pagina-autore2" title="profilo autore">Gianfranco Saluti</a></h3>
+             <br>
+             <h2><em><a href="#item2" title="pagina dell'opera">Tutto è per sempre</a></em></h2>
+             <br>
+             <p>"E se tutto ciò che ti circonda e compone in realtà fosse predestinato dall'origine e lo scorrere del tempo altro non fosse che il nostro osservare lo spazio dall'interno? Questa la domanda fondamentale alla base del saggio, che tante questioni solleva e, spesso, lascia senza risposte certe. Gianfranco Saluti, in arte Mr. So-Tutto-Io, cercherà di avvalorare la tesi dell'eternità del cosmo a partire dalla solidità con cui gli esseri umani di ieri, oggi  e domani hanno in comune un ancestrale bagaglio di immagini e significati, venuti come da un altrove senza temporalità e annidati nelle viscere della coscienza e, chi lo sa, forse..."</p>
+             <br>
+             <ul>
+              <li>Biblioteca Therion, Antropologia, Saggistica</li>
+              <li>2028, pp. 670, ISBN: 9846372910564</li>
+              <li>cartaceo: 29,99€ <button><i title="aggiungi alla wishlist" class="fa-solid fa-heart"></i></button> <button><i class="fa-solid fa-cart-shopping" title="aggiungi al carrello"></i></button> | ebook: 19,99€ <button><i class="fa-solid fa-heart" title="aggiungi alla wishlist"></i></button> <button><i class="fa-solid fa-cart-shopping" title="aggiungi al carrello"></i></button></li>
+             </ul>
+            </div>
+            <hr>
+            <div class="immagine-catalogo" id="img-float3"><img src="img/libro3.3.png"></div>
+            <div class="info" id="info-float3">
+              <h3><a href="#pagina-autore3" title="profilo autore">Martina Casanova</a></h3>
+              <br>
+              <h2><em><a href="#item3" title="pagina dell'opera">Wild words</a></em></h2>
+              <br>
+              <p>"Cosa hanno in comune: un dittatore scellerato, una donna barbuta, un ometto con gli occhiali e la camicia inamidata, un bambino che mangia il gelato ed un anziano signore che scrive il suo testamento? La risposta dell'autrice è semplice: esattamente ogni cosa. Tutti compiono scelte, o hanno l'illusione di compierle, e nel farlo distruggono mondi e ne creano altri del tutto nuovi; è il divenire bella gente e ci frega il cervello a tutti! Con cinica ma tenera ironia ed un mare di stupefacenti quadretti urbani Martina è riuscita nell'incredibile impresa di rendere la vita quotidiana il teatro di mirabolanti peripezie dense di..."</p>
+              <br>
+              <ul>
+                <li>Un mare di storie, Avventura, Narrativa - racconti</li>
+                <li>2028, pp. 189, ISBN: 9738735044112</li>
+                <li>cartaceo: 14,99€ <button><i title="aggiungi alla wishlist" class="fa-solid fa-heart"></i></button> <button><i class="fa-solid fa-cart-shopping" title="aggiungi al carrello"></i></button> | ebook: 7,99€ <button><i class="fa-solid fa-heart" title="aggiungi alla wishlist"></i></button> <button><i class="fa-solid fa-cart-shopping" title="aggiungi al carrello"></i></button></li>
+              </ul>
+            </div>
+            <hr>
+            <div class="immagine-catalogo" id="img-float4"><img src="img/libro4.4.png"></div>
+            <div class="info" id="info-float4">
+              <h3><a href="#pagina-autore4" title="profilo autore">Maria Gladio</a></h3>
+              <br>
+              <h2><em><a href="#item4" title="pagina dell'opera">Ciò che ho perso</a></em></h2>
+              <br>
+              <p>"Capita spesso, rimanendo soli al buio la notte, di chiedersi: che fine farò? se fosse troppo tardi per rimediare al dolore auto-inflitto? Se il mio corpo ed il mio spirito ne avessero abbastanza di me e volessero farmi fuori per sempre? Di vita, per quel che ne sappiamo, ne esiste solo una ed io l'ho sprecata ben benino! Capita però, altrettanto spesso, che ringraziamo di tutte le devianze, che lodiamo questa capacità di fare errori e vivere ai limiti della norma, dove possiamo fare esperienza delle infinite possibilità dell'umano, nel bene e nel male. Che vita sarebbe una vita perfetta? Impensabile."</p>
+              <br>
+              <ul>
+                <li>Piccola Biblioteca Therion, Esistenzialismo, Poesia</li>
+                <li>2028, pp. 149, ISBN: 9329846155203</li>
+                <li>cartaceo: 12,99€ <button><i title="aggiungi alla wishlist" class="fa-solid fa-heart"></i></button> <button><i class="fa-solid fa-cart-shopping" title="aggiungi al carrello"></i></button> | ebook: 6,99€ <button><i class="fa-solid fa-heart" title="aggiungi alla wishlist"></i></button> <button><i class="fa-solid fa-cart-shopping" title="aggiungi al carrello"></i></button></li>
+              </ul>
+            </div>
+            <div class="pagination-tool">
+              <a href="#porzione1catalogo" class="active">1</a>
+              <a href="#porzione2catalogo">2</a>
+              <a href="#porzione3catalogo">3</a>
+              <a href="#porzione4catalogo">4</a>
+              <a href="#porzione5catalogo">5</a>
+              <a href="#porzione6catalogo">6</a>
+              <a href="#porzioneseguentecatalogo">&raquo;</a>
+            </div>
+          </div>
+        </div>
+        <div class="column side"></div>
+      </div>
+      <div class="footer">
+          <div class="main">
+            <p><a href="#chi siamo" title="la nostra storia">Chi siamo</a></p>
+            <br><br>
+            <p><a href="#feedback" title="feedback">Feedback</a></p>
+            <br><br>
+            <p><a href="#newsletter" title="newsletter">Newsletter</a></p>
+          </div>
+          <div class="contatti">
+            <a href="#pagina-contatti" title="contatti"><h3>CONTATTI</h3></a><br>
+            <ul>
+              <li>Social networks: <a href="#pagina-facebook" title="pagina facebook"><i class="fa-brands fa-facebook" style="cursor:pointer"></i></a>
+              <a href="#profilo-twitter" title="profilo twitter"><i class="fa-brands fa-twitter" style="cursor:pointer"></i></a>
+              <a href="#profilo-google+" title="profilo google+"><i class="fa-brands fa-google-plus-g" style="cursor:pointer"></i></a>
+              <a href="#canale-twitch" title="canale twitch"><i class="fa-brands fa-twitch" style="cursor:pointer"></i></a>
+              <a href="#pagina-instagram" title="pagina instagram"><i class="fa-brands fa-instagram" style="cursor:pointer"></i></a>
+              <a href="#canale-youtube" title="canale youtube"><i class="fa-brands fa-youtube" style="cursor:pointer"></i></a></li>
+              <li>E-mail: <a href="#inviaemail" title="invia email">posta@therionedizioni.com</a></li>
+              <li>Segreteria generale: 051 898 9890</li>
+              <li>Servizio clienti: +39 333 247 5678</li>
+              <li>Via Emilio Zago 20 - Bologna - 40128</li>
+            </ul>
+          </div>
+          <div class="sezioni-tecniche">
+            <h3 class="tecnico">ALTRO</h3><br>
+            <ul>
+              <li><a href="#cookie" title="cookie">Cookie Policy</a></li>
+              <li><a href="#privacy" title="privacy">Privacy Policy</a></li>
+              <li><a href="#rights" title="rights">Rights</a></li>
+              <li><a href="#termini">Termini & condizioni</a></li> 
+              <li><a href="web-project-plan.html">Accessibilità</a></li>         
+            </ul>
+          </div>
+          <img src="img/logo2.png">
+          <div class="topbtn&copy">
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <script>
+            let mybutton = document.getElementById("myBtn");
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+            <p id="copy"></a><i class="fa-solid fa-copyright"></i>2022, Giovanni Occhipinti | Esame di Informatica umanistica | a.a. 2021-2022</p>
+          </div>
+      </div>
+    </body>
+</html>
